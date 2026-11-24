@@ -1,0 +1,8 @@
+{
+  "maxlen": 200,
+  "vocab_size": 96,
+  "model": "char_cnn.keras",
+  "default_threshold": 0.5,
+  "threshold_recall_99": 0.05882345139980316,
+  "proposed": "CNN"
+}

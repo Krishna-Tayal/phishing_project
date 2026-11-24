@@ -1,0 +1,104 @@
+{
+  "PhiUSIIL": {
+    "dataset": "PhiUSIIL",
+    "raw_rows": 235795,
+    "raw_class_counts": {
+      "benign": 134850,
+      "phishing": 100945
+    },
+    "leakage_audit_raw": {
+      "group_means": {
+        "trailing_slash": {
+          "legit": 0.0,
+          "phish": 0.36468373866957254
+        },
+        "has_upper": {
+          "legit": 0.0,
+          "phish": 0.0
+        },
+        "length": {
+          "legit": 27.228609566184648,
+          "phish": 46.238773589578486
+        },
+        "https": {
+          "legit": 1.0,
+          "phish": 0.48735449997523406
+        },
+        "http": {
+          "legit": 0.0,
+          "phish": 0.5126455000247659
+        },
+        "www": {
+          "legit": 1.0,
+          "phish": 0.4135519342216058
+        }
+      },
+      "format_only_auc": 0.9975388278729661
+    },
+    "raw_duplicate_urls_removed": 425,
+    "conflicting_label_urls_removed": 84,
+    "duplicates_after_normalisation_removed": 1764,
+    "final_rows": 233522,
+    "final_class_counts": {
+      "benign": 134808,
+      "phishing": 98714
+    },
+    "leakage_audit_normalised": {
+      "group_means": {
+        "trailing_slash": {
+          "legit": 0.0,
+          "phish": 0.3603338938752355
+        },
+        "has_upper": {
+          "legit": 0.0,
+          "phish": 0.0
+        },
+        "length": {
+          "legit": 15.229489347813185,
+          "phish": 37.10468626537269
+        }
+      },
+      "format_only_auc": 0.8060528554712025
+    },
+    "split_tr": {
+      "rows": 168135,
+      "benign": 97061,
+      "phishing": 71074
+    },
+    "split_va": {
+      "rows": 18682,
+      "benign": 10785,
+      "phishing": 7897
+    },
+    "split_te": {
+      "rows": 46705,
+      "benign": 26962,
+      "phishing": 19743
+    },
+    "split_dtr": {
+      "rows": 170874,
+      "benign": 97011,
+      "phishing": 73863
+    },
+    "split_dva": {
+      "rows": 18987,
+      "benign": 10791,
+      "phishing": 8196
+    },
+    "split_dte": {
+      "rows": 43661,
+      "benign": 27006,
+      "phishing": 16655
+    },
+    "domain_overlap_stratified_split": 2495,
+    "domain_overlap_domain_split": 0
+  },
+  "environment": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit-learn": "1.6.1",
+    "xgboost": "3.4.1",
+    "tensorflow": "2.20.0"
+  }
+}
